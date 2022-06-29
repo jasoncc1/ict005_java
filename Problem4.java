@@ -1,27 +1,33 @@
-package Assignment1;
+package Assignment2;
 
 import java.util.Scanner;
 
-public class Problem4 { // 1yard = 91.44cm
+public class Problem4 {
+
 	public static void main(String[] args) {
-		double x, y, z,sum;
-		int avg;
+		int x, y, a, b;
+		
 		Scanner in = new Scanner(System.in);
-		System.out.print("세 개의 정수를 입력하시오. :");
-		
+		System.out.println("민수의 키를 입력하시오. :");
 		x = in.nextInt();
+		System.out.println("민수의 몸무게를 입력하시오. :");
 		y = in.nextInt();
-		z = in.nextInt();
 		
+		System.out.println("기영의 키를 입력하시오. :");
+		a = in.nextInt();
+		System.out.println("기영의 몸무게를 입력하시오. :");
+		b = in.nextInt();
 		
-		sum = x+y+z;
-		avg = (int)sum / 3;
-		System.out.println("sum = "+ sum );
-		System.out.print("avg = " + avg);
+		if(x > a && y > b)
+		{
+			System.out.print(1);
+		}
+		System.out.print(0);
 
 		
 
 
+		
 	}
 
 }

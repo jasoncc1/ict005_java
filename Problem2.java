@@ -1,29 +1,39 @@
-package Assignment1;
+package Assignment2;
+
+import java.util.Scanner;
 
 public class Problem2 {
 
 	public static void main(String[] args) {
-		for(int row = 1; row <= 2; row++)
+		Scanner in = new Scanner(System.in);
+		
+		int x, y, z;
+		
+		System.out.println("세 개의 숫자를 입력하시오.:  ");
+		
+		x = in.nextInt();
+		y = in.nextInt();
+		z = in.nextInt();
+		
+		if(x > y & x > z)
 		{
-			for(int col= 1; col<=10; col++)
-			{			
-				System.out.print("*");
-			}
-			
-			System.out.println();
+			System.out.print(1);
 		}
-		for(int row = 1; row <= 1; row++)
+		else
+		{	
+			System.out.print(0);
+		}
+		
+		if(x == z && x==y)
 		{
-			for(int col= 1; col<=1; col++)
-			{			
-				System.out.println("    **");
-				System.out.println("    **");
-			}
-			
-			System.out.println();
+			System.out.print(1);
 		}
-
-
+		else
+		{
+			System.out.print(" " + 0);
+		}
+		
+		
 	}
-
 }
+
