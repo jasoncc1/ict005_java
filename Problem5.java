@@ -1,19 +1,27 @@
-package Assignment1;
+package Assignment4;
 
 import java.util.Scanner;
 
 public class Problem5 {
-	public static void main(String[] args) { 
+
+	public static void main(String[] args) {
+		int num = 0;
+		int sum = 0;
+		int i = 0;
+		
+		
+		
+		
+		System.out.println("숫자를 입력하시오. ");
+		Scanner in = new Scanner(System.in);
+		num = in.nextInt();
+		
+		while(i<=num) {
+			sum += i;
+			i++;
 			
-			double yard, cm;
-			Scanner in = new Scanner(System.in);
-			
-			System.out.print("yard를 입력하시오. : ");
-			yard = in.nextDouble();
-			
-			cm = yard * 91.44;
-			System.out.println(yard + "yrad = " + Math.round(cm*10)/10.0 +"cm");
+			}
+		System.out.println(sum);
 		
 	}
-
 }

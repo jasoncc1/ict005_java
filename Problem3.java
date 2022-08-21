@@ -1,32 +1,26 @@
-package Assignment2;
+package Assignment4;
 
-import java.util.Scanner;
+import java.util.Scanner; 
 
 public class Problem3 {
 
 	public static void main(String[] args) {
-		int x, y, a, b;
+		int number;
+		int i = 1;
 		
 		Scanner in = new Scanner(System.in);
-		System.out.println("두 개의 정수를 입력하시오. : ");
+		System.out.println("숫자를 입력하시오. :");
+		number = in.nextInt();
 		
-		x = in.nextInt();
-		y = in.nextInt();
+		while(i <=10)
+		{
+			System.out.print(i*number+ " ");
+			i++;
+		}
 		
-		a = x++; 
-		b = --y;
 		
-				
-		System.out.println(a);
-		System.out.println(b);
-		System.out.println(a * b);
-		System.out.println(a * b);
-
-
 		
-		 
-		// TODO Auto-generated method stub
-
+		
 	}
 
 }

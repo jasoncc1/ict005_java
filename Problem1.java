@@ -1,25 +1,23 @@
-package Assignment2;
+package Assignment4;
 
 import java.util.Scanner;
 
-
 public class Problem1 {
-
-	public static void main(String[] args) {
-		int x, y;
+public static void main(String[] args) {
+		int num = 0;
+		int sum =0;
+		int i = 1;
 		
 		Scanner in = new Scanner(System.in);
-		System.out.print("두 개의 정수를 입력하시오.:  ");
-		x = in.nextInt();
-		y = in.nextInt();
+		System.out.println("100이하의 정수를 입력하시오. :");
+		num = in.nextInt();
 		
-		System.out.println(x + " > " + y + "----" + a);
-		System.out.println(x + " < " + y + "----" + a);
-		System.out.println(x + " >= " + y + "----" + a);
-		System.out.println(x + " >= " + y + "----" + a);
-		
-		
-		}
+		while (i <= num)
+			{
+				sum = sum +i;
+				i++;
+			}
+		System.out.println(sum);
 	}
 
 }

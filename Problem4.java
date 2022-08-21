@@ -1,33 +1,24 @@
-package Assignment2;
+package Assignment4;
 
 import java.util.Scanner;
 
-public class Problem4 {
 
+public class Problem4 {
 	public static void main(String[] args) {
-		int x, y, a, b;
+		int num;
+		int sum =0;
+		int i = 1;
 		
 		Scanner in = new Scanner(System.in);
-		System.out.println("민수의 키를 입력하시오. :");
-		x = in.nextInt();
-		System.out.println("민수의 몸무게를 입력하시오. :");
-		y = in.nextInt();
+		System.out.println("100 이하의 정수를 입력하시오. :");
+		num = in.nextInt();
 		
-		System.out.println("기영의 키를 입력하시오. :");
-		a = in.nextInt();
-		System.out.println("기영의 몸무게를 입력하시오. :");
-		b = in.nextInt();
-		
-		if(x > a && y > b)
-		{
-			System.out.print(1);
-		}
-		System.out.print(0);
-
-		
-
-
-		
+		while (i <= num)
+			{
+				sum += i;
+				i++;
+			}
+		System.out.println(sum);
 	}
 
 }
